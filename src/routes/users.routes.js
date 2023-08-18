@@ -13,7 +13,10 @@ function myMiddleware(request,response,next){
     }
 
     next();
-}
+} /* nesse caso criamos um middleware que é uma função que serve como
+um fiscal do que pode ou nao ser executado a partir de uma solicitacao feita para o servidor
+como por exemplo se determinado usuario é ou não administrador para ter acesso ou nao 
+a determinada funcao */
 
 
 
@@ -22,6 +25,8 @@ function myMiddleware(request,response,next){
 const usersController = new UsersController();
 
 
-usersRoutes.post("/",myMiddleware,usersController.create);
+usersRoutes.post("/",myMiddleware,usersController.create); //indicando o caminho da rota
 
 module.exports = usersRoutes;
+
+/* nesse arquivo que criamos as rotas que serao acessadas atraves do cliente.  */

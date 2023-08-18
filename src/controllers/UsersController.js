@@ -13,3 +13,9 @@ class UsersController{
 }
 
 module.exports = UsersController;
+
+
+/* é através da users controller que definimos o que sera apresentado a partir da solicitacao de uma rota
+é nesse arquivo que controlamos o que vai ser feito ao acessar determinadas rotas. */
+
+/* */
