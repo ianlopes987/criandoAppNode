@@ -8,9 +8,9 @@ const usersRoutes = Router();
 function myMiddleware(request,response,next){
     console.log("Voce passou pelo Middleware");
 
-    if(!request.body.isAdmin){
+    /*if(!request.body.isAdmin){
         return response.json({message:"user unauthorized"});
-    }
+    }*/
 
     next();
 } /* nesse caso criamos um middleware que é uma função que serve como
