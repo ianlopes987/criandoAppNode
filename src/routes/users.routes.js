@@ -26,6 +26,9 @@ const usersController = new UsersController();
 
 
 usersRoutes.post("/",myMiddleware,usersController.create); //indicando o caminho da rota
+usersRoutes.put('/:id', usersController.update);
+
+
 
 module.exports = usersRoutes;
 
